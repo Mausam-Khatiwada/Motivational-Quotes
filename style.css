@@ -1,0 +1,117 @@
+body{
+  background-image: url('background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#quote-container {
+  color: white;
+  width: 60%;
+  height: 25%;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.5);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  overflow: hidden;
+}
+
+#quote {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#author {
+  font-size: 18px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+.button{
+  display: flex;
+  text-align: center;
+}
+#postMe{
+  background-color: #1D9BF0;
+  border: 2px solid #1D9BF0;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 150px;
+  margin: 10px;
+}
+
+#next-btn {
+  background-color: green;
+  border: 2px solid green;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 150px;
+  margin: 10px;
+}
+
+#next-btn:hover{
+background-color: transparent;
+
+  border: 2px solid green;
+}
+#postMe:hover {
+  background-color: transparent;
+
+  border: 2px solid #1D9BF0;
+}
+
+@keyframes border-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  #quote-container {
+width: 85%;
+  }
+
+  #quote {
+    font-size: 18px;
+  }
+
+  #author {
+    font-size: 14px;
+  }
+
+  .buttons-container {
+    flex-direction: column;
+  }
+
+}
